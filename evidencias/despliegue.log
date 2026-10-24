@@ -1,0 +1,26 @@
+PRACTICA BLUE/GREEN
+2026-10-24T02:52:18+00:00
+
+=== DESPLIEGUE GREEN ===
+Validando health y readiness de green...
+{"status": "ok"}{"ready": true}
+Conmutando trafico hacia green (1.4.0)...
+Version activa:
+{"environment": "green", "version": "1.4.0"}
+
+=== VALIDACION GREEN ===
+{"environment": "green", "version": "1.4.0"}
+{"status": "ok"}
+{"ready": true}
+
+=== ROLLBACK A BLUE ===
+Validando health y readiness de blue...
+{"status": "ok"}{"ready": true}
+Conmutando trafico hacia blue (1.3.0)...
+Version activa:
+{"environment": "blue", "version": "1.3.0"}
+
+=== VALIDACION FINAL BLUE ===
+{"environment": "blue", "version": "1.3.0"}
+{"status": "ok"}
+{"ready": true}
